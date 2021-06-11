@@ -9,13 +9,7 @@
 ### Clone this repo
 
 ```bash
-git clone https://github.com/sravanrekandar/python-app-starter-kit.git my_app && cd my_app
-```
-
-### Remove git history
-
-```bash
-rm -rf .git
+git clone https://github.com/sravanrekandar/swim-train-app.git && cd swim-train-app
 ```
 
 ### Install dependencies
@@ -42,3 +36,25 @@ Run the Setup
 ```bash
 ./setup.sh
 ```
+
+## Activate virtual environment
+
+For Windows Users
+
+```bat
+.venv/Scripts/activate
+```
+
+For mac/Linux Users
+
+```bash
+source .venv/bin/activate
+```
+
+## Start the app
+
+```bash
+uvicorn main:app --reload
+```
+
+Now navigate to [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs#/)
